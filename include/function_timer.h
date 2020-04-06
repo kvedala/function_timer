@@ -16,6 +16,9 @@
 using namespace std::chrono;
 
 /** @addtogroup CPP
+ * {
+ **/
+/**
  * declare class structure for convenience
  **/
 class function_timer
@@ -39,6 +42,10 @@ private:
     duration<double> _duration;
 };
 
+/**
+ * }
+ **/
+
 extern "C"
 {
 #else // __cplusplus
@@ -47,18 +54,20 @@ typedef struct function_timer function_timer;
 #endif // __cplusplus
 
     /** @addtogroup C
+     **/
+    /**
      * function to create a new timer instance to use in C programs
      * @note The instantiated timer need to be explicitly deleted!
      **/
     extern function_timer *new_timer(void);
 
-    /** @addtogroup C
+    /**
      * function to start the timer in C programs.
      * Requires timer to be created using the function `new_timer`
      **/
     extern void start_timer(function_timer *timer);
 
-    /** @addtogroup C
+    /**
      * function to end the timer in C programs.
      * Requires timer to be created using the function `new_timer`. If the
      * function `start_timer` was not called before, the duration will be
@@ -66,12 +75,16 @@ typedef struct function_timer function_timer;
      **/
     extern double end_timer(function_timer *timer);
 
-    /** @addtogroup C
+    /**
      * function to delete a timer instance
      * @note The timer should be instantiated using the function `new_timer`
      **/
     extern void delete_timer(function_timer *timer);
     // extern double time_function(void (*function)(...));
+
+    /**
+     * }
+     **/
 
 #ifdef __cplusplus
 }
