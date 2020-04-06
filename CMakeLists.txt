@@ -12,6 +12,10 @@ add_library(function_timer
 
 target_include_directories(function_timer PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
+set_property(TARGET function_timer PROPERTY CXX_STANDARD 11) # required for std::chrono
+set_property(TARGET function_timer PROPERTY CXX_STANDARD_REQUIRED ON)
+set_property(TARGET function_timer PROPERTY CXX_EXTENSIONS OFF)
+
 install(TARGETS function_timer DESTINATION lib)
 install(FILES include/function_timer.h DESTINATION lib)
 
