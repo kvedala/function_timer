@@ -8,11 +8,21 @@ compiler:
 before_install:
   - test -n $CC && unset CC
 
+sudo: false
+
+addons:
+  apt:
+    packages:
+      - libgomp1
+      - gcc-6
+      - clang-6
+
 script:
   - mkdir build
   - cd build
   - cmake ..
   - make
   - ctest
+  - make test
   - ./test_c
   - ./test_cxx
