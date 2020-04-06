@@ -15,7 +15,6 @@ addons:
     packages:
       - libgomp1
       - gcc-6
-      - clang-6
 
 script:
   - export
