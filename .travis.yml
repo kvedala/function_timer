@@ -1,0 +1,17 @@
+language: cpp
+os: linux
+compiler:
+  - gcc
+  - clang
+
+before_install:
+  - test -n $CC && unset CC
+
+script:
+  - mkdir build
+  - cd build
+  - cmake ..
+  - make
+  - ctest
+  - test_c
+  - test_cxx
