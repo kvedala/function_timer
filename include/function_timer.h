@@ -18,7 +18,7 @@ private:
     char *_fn_name = 0;
     high_resolution_clock::time_point _start_time;
     high_resolution_clock::time_point _end_time;
-    duration<double> _duration = 0.f;
+    duration<double> _duration;
 };
 
 extern "C"
