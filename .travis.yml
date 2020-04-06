@@ -13,5 +13,5 @@ script:
   - cmake ..
   - make
   - ctest
-  - test_c
-  - test_cxx
+  - ./test_c
+  - ./test_cxx
