@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0)
 project(function_timer
     LANGUAGES C CXX
-    VERSION 0.1.0
+    VERSION 1.0.0
     DESCRIPTION "Library to get the execution time of a given function. Written in C++ with hooks for C language as well."
 )
 
