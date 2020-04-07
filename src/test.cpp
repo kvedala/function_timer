@@ -54,8 +54,7 @@ long long sum_of_primes_omp(long N)
 int main(int argc, char **argv)
 {
     using namespace std;
-    cout << scientific;
-    setprecision(4);
+    cout << setprecision(4);
 
     function_timer timer; // created on heap so no need to delete
 
