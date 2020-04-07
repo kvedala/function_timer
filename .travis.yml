@@ -16,7 +16,7 @@ addons:
       # - gcc-6
 
 script:
-  - export
+  - export OMP_NUM_THREADS=4
   - mkdir build
   - cd build
   - cmake ..
