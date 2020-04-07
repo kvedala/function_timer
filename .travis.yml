@@ -17,6 +17,7 @@ addons:
 
 script:
   - export OMP_NUM_THREADS=4
+  - export LD_LIBRARY_PATH=$(if [[ $CXX == "clang++" ]]; then echo -n '/usr/local/clang/lib'; fi)
   - mkdir build
   - cd build
   - cmake ..
