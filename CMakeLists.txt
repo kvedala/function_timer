@@ -12,9 +12,8 @@ add_library(function_timer
 
 target_include_directories(function_timer PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
-set_property(TARGET function_timer PROPERTY CXX_STANDARD 11) # required for std::chrono
-set_property(TARGET function_timer PROPERTY CXX_STANDARD_REQUIRED ON)
-set_property(TARGET function_timer PROPERTY CXX_EXTENSIONS OFF)
+# std::chrono is a CXX-11 feature
+target_compile_features(function_timer PUBLIC cxx_std_11)
 
 install(TARGETS function_timer DESTINATION lib)
 install(FILES include/function_timer.h DESTINATION lib)
@@ -40,6 +39,7 @@ find_package(OpenMP)
 
     add_executable(test_cxx src/test.cpp)
     target_link_libraries(test_cxx function_timer)
+    target_compile_features(test_cxx PUBLIC cxx_std_11)
     if(OpenMP_CXX_FOUND)
         target_link_libraries(test_cxx OpenMP::OpenMP_CXX)
     endif()

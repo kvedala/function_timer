@@ -1,6 +1,5 @@
 language: cpp
 os: linux
-# dist: trusty
 compiler:
   - gcc
   - clang
@@ -14,7 +13,7 @@ addons:
       - ubuntu-toolchain-r-test
     packages:
       - libgomp1
-      - gcc-6
+      # - gcc-6
 
 script:
   - export

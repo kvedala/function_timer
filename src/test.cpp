@@ -63,7 +63,7 @@ int main(int argc, char **argv)
     timer.start_timer();
     long long sum = sum_of_primes(n);
     timer.end_timer();
-    cout << setw(6) << n << ": " << setw(8) << sum << endl;
+    cout << setw(6) << n << ": " << sum << endl;
     cout << "Time taken: " << timer.get_duration() << " sec" << endl
          << endl;
 
@@ -71,7 +71,7 @@ int main(int argc, char **argv)
     timer.start_timer();
     sum = sum_of_primes(n);
     timer.end_timer();
-    cout << setw(6) << n << ": " << setw(8) << sum << endl;
+    cout << setw(6) << n << ": " << sum << endl;
     cout << "Time taken: " << timer.get_duration() << " sec" << endl
          << endl;
 
@@ -79,7 +79,7 @@ int main(int argc, char **argv)
     timer.start_timer();
     sum = sum_of_primes(n);
     timer.end_timer();
-    cout << setw(6) << n << ": " << setw(8) << sum << endl;
+    cout << setw(6) << n << ": " << sum << endl;
     cout << "Time taken: " << timer.get_duration() << " sec" << endl
          << endl;
 
@@ -87,7 +87,7 @@ int main(int argc, char **argv)
     timer.start_timer();
     sum = sum_of_primes(n);
     timer.end_timer();
-    cout << setw(6) << n << ": " << setw(8) << sum << endl;
+    cout << setw(6) << n << ": " << sum << endl;
     cout << "Time taken: " << timer.get_duration() << " sec" << endl
          << endl;
 
@@ -97,7 +97,7 @@ int main(int argc, char **argv)
     timer.start_timer();
     sum = sum_of_primes_omp(n);
     timer.end_timer();
-    cout << setw(6) << n << ": " << setw(8) << sum << endl;
+    cout << setw(6) << n << ": " << sum << endl;
     cout << "Time taken: " << timer.get_duration() << " sec" << endl
          << endl;
 #endif
