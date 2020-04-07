@@ -5,7 +5,7 @@ A wrapper around the CXX-11's `std::chrono` library with high-precision timer to
 execution times in a program. The wrapper enables direct use in C and C++ programs. 
 
 ## Compile
-The module is provided with a cmake build system. To compile, run:
+The module is provided with a cmake build system. The compile sequence is:
 ```sh
 mkdir build
 cd build
