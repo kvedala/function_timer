@@ -1,9 +1,8 @@
 [![Build Status](https://travis-ci.org/kvedala/function_timer.svg?branch=master)](https://travis-ci.org/kvedala/function_timer)
 
 # function_timer 
-A wrapper around the CXX-11's `std::chrono` library to be used in C programs as well. 
-This library provides a high-precision timer that can be utilized to measure precise 
-execution times in a program. 
+A wrapper around the CXX-11's `std::chrono` library with high-precision timer to measure precise 
+execution times in a program. The wrapper enables direct use in C and C++ programs. 
 
 ## Compile
 The module is provided with a cmake build system. To compile, run:
