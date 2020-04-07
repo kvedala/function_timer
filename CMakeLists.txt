@@ -5,7 +5,7 @@ project(function_timer
     DESCRIPTION "Library to get the execution time of a given function. Written in C++ with hooks for C language as well."
 )
 
-add_library(function_timer
+add_library(function_timer STATIC
     src/main.cpp
     include/function_timer.h
 )
