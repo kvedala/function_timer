@@ -74,6 +74,14 @@ typedef struct function_timer function_timer;
      * inavlid.
      **/
     extern double end_timer(function_timer *timer);
+    
+    /**
+     * function to end and delete the timer in C programs.
+     * Requires timer to be created using the function `new_timer`. If the
+     * function `start_timer` was not called before, the duration will be
+     * inavlid.
+     **/
+    extern double end_timer_delete(function_timer *timer);
 
     /**
      * function to delete a timer instance
