@@ -19,6 +19,7 @@ install(TARGETS function_timer DESTINATION lib)
 install(FILES include/function_timer.h DESTINATION lib)
 
 cmake_policy(SET CMP0054 NEW)
+cmake_policy(SET CMP0057 NEW)
 find_package(Doxygen OPTIONAL_COMPONENTS dot dia)
 if(DOXYGEN_FOUND)
     set(DOXYGEN_GENERATE_HTML YES)
