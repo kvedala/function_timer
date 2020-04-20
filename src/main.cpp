@@ -43,6 +43,14 @@ double end_timer(function_timer *timer)
     return timer->get_duration();
 }
 
+double end_timer_delete(function_timer *timer)
+{
+    timer->end_timer();
+    double duration = timer->get_duration();
+    delete_timer(timer);
+    return duration;
+}
+
 void delete_timer(function_timer *timer)
 {
     if (timer)
